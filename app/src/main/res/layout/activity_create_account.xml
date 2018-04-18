@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fdfdfd"
+    tools:context=".CreateAccount">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#021b02"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:layout_marginTop="3dp"
+        android:id="@+id/accCreate" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="15sp"
+        android:layout_below="@+id/accCreate"
+        android:inputType="text"
+        android:fontFamily="@string/app_name"
+        android:layout_marginTop="3dp"
+        android:id="@+id/accName"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:textSize="15sp"
+        android:layout_below="@+id/accName"
+        android:fontFamily="@string/app_name"
+        android:layout_marginTop="3dp"
+        android:inputType="text"
+        android:id="@+id/emailAddress"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="15sp"
+        android:layout_below="@+id/emailAddress"
+        android:inputType="text"
+        android:fontFamily="@string/app_name"
+        android:layout_marginTop="3dp"
+        android:id="@+id/userName"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:textSize="15sp"
+        android:fontFamily="@string/app_name"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="3dp"
+        android:id="@+id/newPass"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:textSize="15sp"
+        android:fontFamily="@string/app_name"
+        android:layout_below="@+id/newPass"
+        android:layout_marginTop="3dp"
+        android:id="@+id/confirmPass"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password must be atleast 8 characters."
+        android:textSize="11sp"
+        android:textColor="#000000"
+        android:fontFamily="@string/app_name"
+        android:layout_marginTop="3dp"
+        android:id="@+id/passWarning"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show password"
+        android:textSize="13dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@string/app_name"
+        android:clickable="true"
+        android:checked="true"
+        android:id="@+id/showPass"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/genDer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gender:"
+                android:textColor="#021b02"
+                android:fontFamily="monospace"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@string/app_name"
+                android:gravity="center"
+                android:id="@+id/genMale"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@string/app_name"
+                android:gravity="center"
+                android:id="@+id/genFemale" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="15sp"
+                android:fontFamily="@string/app_name"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/genOthers"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=" Register "
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@string/app_name"
+        android:textAlignment="center"
+        android:background="#3b9f32"
+        android:textColor="#fefffe"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/regAccount"/>
+
+    <TextView
+        android:id="@+id/dontHave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:text="Already have an account?"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#021b02"
+        android:textSize="11sp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=" Login here "
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@string/app_name"
+        android:textAlignment="center"
+        android:background="#3b9f32"
+        android:textColor="#fefffe"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BtnLoginHere"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions/Privacy Policy"
+        android:textSize="13sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:fontFamily="@string/app_name"
+        android:id="@+id/tandcDetails"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="©2018 SMAAK Inc."
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="#252426"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:layout_gravity="center"
+        android:layout_below="@+id/tandcDetails"
+        android:layout_marginTop="35dp"
+        android:id="@+id/copyRight" />
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fdfdfd"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/celluloid" />
+
+            <TextView
+                android:id="@+id/appGreetings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="monospace"
+                android:text="Welcome to Celluloid"
+                android:textAlignment="center"
+                android:textColor="#021b02"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appGreetings"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@string/app_name"
+                android:hint="Username"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/passWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@string/app_name"
+                android:hint="Password"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/BtnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passWord"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="#3b9f32"
+                android:fontFamily="@string/app_name"
+                android:text=" Login "
+                android:textAlignment="center"
+                android:textColor="#fefffe"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/appOr1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/BtnLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="monospace"
+                android:text="Or"
+                android:textAlignment="center"
+                android:textColor="#021b02"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dontHave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appOr1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="casual"
+                android:text="Don't have an account yet?"
+                android:textAlignment="center"
+                android:textColor="#021b02"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dontHave"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="#3b9f32"
+                android:fontFamily="@string/app_name"
+                android:text=" Create an Account "
+                android:textAlignment="center"
+                android:textColor="#fefffe"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/appOr2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/createAccount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="monospace"
+                android:text="Or"
+                android:textAlignment="center"
+                android:textColor="#021b02"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/BtnLoginFb"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/appOr2"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="#fefffe"
+                android:drawableLeft="@drawable/loginwithfacebook1" />
+
+            <Button
+                android:id="@+id/BtnLoginGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/BtnLoginFb"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="#fefffe"
+                android:drawableLeft="@drawable/loginwithgoogle" />
+
+            <TextView
+                android:id="@+id/termsNconditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BtnLoginGoogle"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="casual"
+                android:text="By logging in you are agree to Celluloid's Terms and Conditions"
+                android:textColor="#021b02"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/notNow"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/termNconditions"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#e60b0b"
+                android:fontFamily="@string/app_name"
+                android:text="Not Now"
+                android:textColor="#fefffe"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/copyRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/termNconditions"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:fontFamily="serif-monospace"
+                android:text="©2018 SMAAK Inc."
+                android:textColor="#252426"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
